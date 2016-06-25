@@ -1,0 +1,113 @@
+<!DOCTYPE	html> 
+<!--	atributo	lang	define	a	linguagem	predominante	no	site	--> 
+<html	lang="pt-br"> 
+<head>				
+	<!--	declaração	da	codificação	dos	caracteres	-->				
+	<meta	charset="utf-8">	
+	<!--	título	da	página	-->				
+	<title>Primeiro Site</title>				
+	<!--	descrição	da	página.	visível	para	os	buscadores	-->				
+	<meta	name="primeiro-site"	content="">				
+	<!--	força	o	navegador	a	exibir	o	site	de	acordo	com	o	tamanho	do	dispositivo	-->	
+	<meta	name="viewport"	content="width=device-width,	initialscale=1">
+	<!--	reseta	os	estilos	do	navegador	-->				
+	<link	rel="stylesheet"	href="css/normalize.css">
+
+	<style>
+		@import 'https://fonts.googleapis.com/css?family=Open+Sans|Pacifico|Roboto+Slab';
+	</style>
+
+	<!--	estilo	próprio	-->				
+	<link	rel="stylesheet"	href="css/estilo.css"> 
+</head> 
+<body>				
+	<!--	conteúdo	da	página	-->
+	<nav>
+		<a href="https://www.facebook.com/natharamorim">Nathy Morim</a>
+		<ul>
+			<li>
+				<a href="#sobre">SOBRE</a>
+			</li>
+			<li>
+				<a href="#servicos">SERVIÇOS</a>
+			</li>
+			<li>
+				<a href="#portifolio">PORTIFÓLIO</a>
+			</li>
+			<li>
+				<a href="#contatos">CONTATO</a>
+			</li>
+		</ul>
+	</nav>
+	<header>
+		<h1>Nathy Morim</h1>
+		<p>Apresentando meu segundo site</p>
+		<a href="#sobre" class="button">VER MAIS</a>
+	</header>
+	<section id="sobre" class="sobre">
+		<h2>SOBRE</h2>
+		<p>Sou academica do curso Ciência da Computação na UNIVALI</p>
+		<a href="#contatos" class="button">ENTRE EM CONTATO</a>
+	</section>
+	<section id="servicos" class="servicos">
+		<h2>SERVIÇOS</h2>
+		<article class="servico">
+			<img src="./imagens/icone-1.png">
+			<h3>Fácil Integração</h3>
+			<p>Integra facilmente seu site a qualquer gerenciador de conteúdo.</p>
+		</article>
+		<article class="servico">
+			<img src="./imagens/icone-2.png">
+			<h3>Hospedagem Moderna</h3>
+			<p>Descrição do serviço</p>
+		</article>
+		<article class="servico">
+			<img src="./imagens/icone-3.png">
+			<h3>Melhores Práticas</h3>
+			<p>Descrição sobre o serviço</p>
+		</article>
+		<article class="servico">
+			<img src="./imagens/icone-4.png">
+			<h3>Feito com Amor</h3>
+			<p>Muita dedicação envolvida.</p>
+		</article>
+	</section>
+	<section id="portifolio" class="portifolio">
+		<h2>PORTIFÓLIO</h2>		
+		<img src="./imagens/imagem-2.jpg">
+		<img src="./imagens/imagem-3.jpg">
+		<img src="./imagens/imagem-4.jpg">
+		<img src="./imagens/imagem-5.jpg">
+		<img src="./imagens/imagem-6.jpg">
+		<img src="./imagens/imagem-7.jpg">
+	</section>
+	<section id="contatos" class="contato">
+		<h2>CONTATO</h2>
+		<p>Para saber mais:</p>
+		<form action="/contato-sucesso" method="post">
+			<input type="text" name="nome" placeholder="Nome">
+			<input type="email" name="email" placeholder="Email">
+			<select name="assunto">
+				<option selected>Selecione um assunto</option>
+				<option value="orcamento">Orçamento</option>
+				<option value="suporte">Suporte</option>
+				<option value="outro">Outro</option>
+			</select>
+			<textarea name="mensagem" placeholder="Mensagem"></textarea>
+			<button type="submit" class="button">ENVIAR</button>
+		</form>		
+		
+		<div class="icone-contato">
+			<img src="./imagens/icone-5.png">
+			<a href="mailto:nathara.amorim@hotmail.com">nathara.amorim@hotmail.com</a>
+		</div>
+		<div class="icone-contato">
+			<img src="./imagens/icone-6.png">
+			<a href="TEL:04796833978">(047)96833978</a>
+		</div>
+	</section>
+	<footer>
+		<p>Desenvolvido por Nathy Morim</p>
+	</footer>
+</body>
+</html>
